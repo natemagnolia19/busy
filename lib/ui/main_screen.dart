@@ -36,18 +36,22 @@ class _MainScreenState extends State<MainScreen> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
+          color: Colors.white,
           shape: CircularNotchedRectangle(),
           child: Container(
+            color: Colors.transparent,
             height: 60,
             child: BottomNavigationBar(
+              elevation: 0,
+              backgroundColor: Colors.transparent,
               type: BottomNavigationBarType.fixed,
               iconSize: 35,
               selectedFontSize: 0,
               unselectedFontSize: 0,
               selectedIconTheme: IconThemeData(color: Colors.blue),
               unselectedIconTheme: IconThemeData(color: Colors.black),
-              unselectedLabelStyle: TextStyle(color: Colors.grey),
-              fixedColor: Colors.black,
+              unselectedLabelStyle: TextStyle(color: Colors.white),
+              fixedColor: Colors.white,
               onTap: _onItemTapped,
               currentIndex: _selectedIndex,
               items: [
