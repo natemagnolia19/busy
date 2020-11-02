@@ -57,7 +57,10 @@ class _MainScreenState extends State<MainScreen> {
               items: [
                 BottomNavigationBarItem(
                   title: Text(''),
-                  icon: Icon(Icons.home),
+                  icon: Icon(
+                    Icons.home,
+                    size: 42,
+                  ),
                 ),
                 BottomNavigationBarItem(
                   title: Text(''),
