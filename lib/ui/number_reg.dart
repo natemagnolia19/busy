@@ -13,7 +13,7 @@ class NumberReg extends StatefulWidget {
 
 class _NumberRegState extends State<NumberReg> {
   var controller = new MaskedTextController(
-    mask: '(000) - 000 - 00 - 00',
+    mask: '(000)-000-00-00',
   );
   String dropdownValue = '+7';
 
@@ -74,7 +74,7 @@ class _NumberRegState extends State<NumberReg> {
                             child: TextFormField(
                               decoration: InputDecoration(
                                   contentPadding: EdgeInsets.only(left: 20),
-                                  hintText: '(777) - 777 - 77 - 77',
+                                  hintText: '(777)-777-77-77',
                                   focusedBorder: InputBorder.none,
                                   border: InputBorder.none),
                               controller: controller,
